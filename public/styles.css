@@ -1,0 +1,67 @@
+html{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(90deg, #938ee8 20%, #0097b2);
+}
+
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 32px;
+    font-weight: bold;
+}
+#calculator{
+    background-color: #737373;
+    width:330px;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px groove black;
+}
+.calc-display{
+    font-family: 'Prompt', sans-serif;
+    width: 310px;
+    text-align: right;
+    border: 1px solid black;
+    margin-bottom: 5px;
+    padding-right: 5px;
+}
+.formula{
+    height:20px;
+    font-size: 15px;
+}
+.output{
+    height: 30px;
+    font-size: 20px;
+}
+#calculator-buttons{
+    display: grid;
+    grid-template-columns: 80px 80px 80px 80px;
+    grid-template-rows: 70px 70px 70px 70px 70px;
+    font-family: "Montserrat", sans-serif;
+}
+button{
+    border: none;
+    box-shadow: 0px 1px 5px black;
+    margin: 3px;
+    border-radius: 0.25rem;
+}
+#clear, #zero{
+    grid-column: span 2;
+}
+#clear{
+    background-color: #d9d9d9;
+}
+#equal{
+    grid-row: span 2;
+    background-color: #d9d9d9;
+}
+.number-button{
+    background-color: #938ee8;
+}
+.formula-button{
+    background-color: #0097b2;
+}
